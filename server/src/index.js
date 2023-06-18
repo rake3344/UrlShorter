@@ -1,6 +1,6 @@
-import server from "./config/http";
-import connectDB from "./config/db";
-import "./config/env";
+import server from "./config/http.js";
+import connectDB from "./config/db.js";
+import "./config/env.js";
 
 const boostrap = () => {
     connectDB(process.env.MONGO_URI);
